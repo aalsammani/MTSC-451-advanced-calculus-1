@@ -4,7 +4,7 @@ Interactive lecture notes for **MTSC 451, Advanced Calculus I**, Delaware State 
 Instructor: Abdallah Alsammani.
 
 The site is built with [Jupyter Book 2](https://jupyterbook.org) (MyST Markdown) and published with
-GitHub Pages. Planned address: <https://aalsammani.github.io/MTSC-451-Advanced-Calculus/>
+GitHub Pages. Planned address: <https://aalsammani.github.io/MTSC-451-advanced-calculus-1/>
 
 ## Project layout
 
