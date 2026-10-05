@@ -1,0 +1,70 @@
+# MTSC 451 — Advanced Calculus I: lecture-note website (Jupyter Book 2 / MyST)
+#
+# Preview while writing:   jupyter-book start
+# Static build:            jupyter-book build --html
+# To add a lecture, see docs/ADDING_A_LECTURE.md (short version: create the
+# file, then add one line under its module in the `toc` below).
+version: 1
+project:
+  id: 71dc5811-55fa-41ea-9114-c9fc7df09e6b
+  title: MTSC 451 — Advanced Calculus I
+  description: Lecture notes for MTSC 451, Advanced Calculus I, Delaware State University, Fall 2026.
+  authors:
+    - name: Abdallah Alsammani
+      affiliations:
+        - Delaware State University
+  keywords: [advanced calculus, vectors, multivariable calculus, lecture notes]
+  # After the GitHub repository exists, uncomment to show a GitHub link in the header:
+  # github: https://github.com/aalsammani/MTSC-451-Advanced-Calculus
+  plugins:
+    - plugins/math-punctuation.mjs
+  numbering:
+    headings: false
+    equation: false
+  # Notation macros, identical to the LaTeX lecture preamble.
+  math:
+    '\vv': '\mathbf{#1}'
+    '\vvi': '\mathbf{i}'
+    '\vvj': '\mathbf{j}'
+    '\vvk': '\mathbf{k}'
+    '\vzero': '\mathbf{0}'
+    '\R': '\mathbb{R}'
+    '\ip': '\langle #1\rangle'
+    '\vect': '\overrightarrow{#1}'
+    '\scal': '\operatorname{scal}'
+    '\proj': '\operatorname{proj}'
+  exclude:
+    - README.md
+    - docs/**
+    - templates/**
+    - latex-source/**
+    - _qa/**
+  toc:
+    - file: index.md
+    - file: syllabus.md
+    - file: module-01/module-01.md
+      children:
+        - file: module-01/lecture-01.md
+        - file: module-01/lecture-02.md
+        - file: module-01/lecture-03.md
+        - file: module-01/lecture-04.md
+        - file: module-01/lecture-05.md
+        - file: module-01/lecture-06.md
+        - file: module-01/lecture-07.md
+    - file: module-02/module-02.md
+      # children:
+      #   - file: module-02/lecture-08.md
+    - file: module-03/module-03.md
+    - file: module-04/module-04.md
+    - file: module-05/module-05.md
+    - file: module-06/module-06.md
+    - file: resources.md
+site:
+  template: book-theme
+  title: MTSC 451 — Advanced Calculus I
+  options:
+    logo_text: MTSC 451 · Advanced Calculus I
+    favicon: assets/favicon.svg
+    style: assets/css/course.css
+    folders: true
+    hide_footer_links: false
